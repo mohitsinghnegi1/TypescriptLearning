@@ -119,7 +119,7 @@ let obj3 = new Point1({ x: 1 }); // see i have made Point interface y argument a
 
 //1) we can first initaize class variable by using constructor - so for that we can use access modifiers
 
-//there are three access modifier - public , private
+//there are three access modifier - public , private ,protected : this one is accessable in drived classs
 
 class Access {
   constructor(x: number) {
