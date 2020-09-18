@@ -1,4 +1,4 @@
-# TYPESCRIPT
+## TYPESCRIPT
 - Resources
   - https://www.youtube.com/watch?v=WBPrJSw7yQA
   - https://www.youtube.com/watch?v=NjN00cM18Z4
