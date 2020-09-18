@@ -62,3 +62,4 @@ console.log((randomVal2 as string).toUpperCase());
 function fn(x: () => void) {
   x();
 }
+//
