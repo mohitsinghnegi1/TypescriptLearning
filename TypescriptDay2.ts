@@ -108,3 +108,14 @@ const obj1 = new Dog(25); //see it directly passess value to super constructor
 console.log(obj1.type);
 console.log(obj1.bark());
 console.log(obj1.drink);
+
+//check if object is empty or not
+function isEmpty(obj) {
+  for (var prop in obj) {
+    return false;
+  }
+
+  return true;
+}
+
+console.log(isEmpty({}));
