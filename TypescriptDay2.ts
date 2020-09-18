@@ -63,3 +63,48 @@ function fn(x: () => void) {
   x();
 }
 //
+
+//we have a concept of multitype of tsc
+let multitype: number | string;
+
+multitype = 0;
+multitype = 'sssss';
+
+//we can use any type for this pupose but sincy tsc does not provide intellisence support for any type + if we
+//assing a types then we will get an errror if we try to assign value of other types
+
+//we have a optional type parameter in function as well as a default type paramaneter in the function
+//  (in this case a default value will be there if optional vaue is not passed in the argument)
+
+const compute = (num1: number, num2: number = 10): number => {
+  return num1 + num2;
+};
+
+console.log(compute(10)); //in this case function will take default value ans =20
+
+//declare an object type
+let obj: { name: string; class: number };
+
+//now we will learn about classess
+class Animal {
+  //see by using acccess modifiers we dont need to create a var inside class tsc will automatically do it for us
+  constructor(public type: number) {
+    this.type = type;
+  }
+}
+
+class Dog extends Animal {
+  bark = () => {
+    console.log('Bhow bhow');
+  };
+  private _drink: string = 'drinking';
+
+  get drink(): string {
+    return this._drink;
+  }
+}
+
+const obj1 = new Dog(25); //see it directly passess value to super constructor
+console.log(obj1.type);
+console.log(obj1.bark());
+console.log(obj1.drink);
